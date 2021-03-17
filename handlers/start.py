@@ -16,17 +16,22 @@ Use the buttons below to know more about me.""",
             [
                 [
                     InlineKeyboardButton(
-                        "⚒ Source code", url="https://t.me/SuMusicPlayer"
+                        "⚒ Contact Owner", url="https://t.me/aidkez"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/su_Chats"
+                        "💬 Group", url="https://t.me/joinsenyawa"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔈", url="https://t.me/su_Bots"
+                        "Channel 🔈", url="https://t.me/aughys"
                     )
                 ]
+                [
+                    InlineKeyboardButton(
+                        "💰 Store", url="https://t.me/jualannokos"
+                    )
+                ],
             ]
         )
     )
