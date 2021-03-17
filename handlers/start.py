@@ -9,9 +9,9 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
 
-I am SU Music Player, an open-source bot that lets you play music in your Telegram groups.
+Saya adalah Asta, Bot Music yang bertujuan untuk melayani warga Group 𝚋𝚎𝚛𝚜𝚎𝚗𝚢𝚊𝚠𝚊.
 
-Use the buttons below to know more about me.""",
+Pencet tombol dibawah untuk mengetahui lebih tentang bot ini.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -31,24 +31,37 @@ Use the buttons below to know more about me.""",
                     InlineKeyboardButton(
                         "💰 Store", url="https://t.me/jualannokos"
                     )
-                ],
+                ]
             ]
         )
     )
 
 
-@Client.on_message(command("start") & other_filters2)
-async def start2(_, message: Message):
+@Client.on_message(command("start") & other_filters)
+async def start(_, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        f"""<b>👋🏻 Hi {message.from_user.first_name}!</b>
+
+Saya adalah Asta, Bot Music yang bertujuan untuk melayani warga Group 𝚋𝚎𝚛𝚜𝚎𝚗𝚢𝚊𝚠𝚊.
+
+Pencet tombol dibawah untuk mengetahui lebih tentang bot ini.""",
         reply_markup=InlineKeyboardMarkup(
             [
+                    InlineKeyboardButton(
+                        "⚒ Contact Owner", url="https://t.me/aidkez"
+                    )
+                ],
                 [
                     InlineKeyboardButton(
-                        "✅ Yes", switch_inline_query_current_chat=""
+                        "💬 Group", url="https://t.me/joinsenyawa"
                     ),
                     InlineKeyboardButton(
-                        "No ❌", callback_data="close"
+                        "Channel 🔈", url="https://t.me/aughys"
+                    )
+                ]
+                [
+                    InlineKeyboardButton(
+                        "💰 Store", url="https://t.me/jualannokos"
                     )
                 ]
             ]
